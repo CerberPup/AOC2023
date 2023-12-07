@@ -1,13 +1,10 @@
-#include <algorithm>
-#include <cstdio>
-#include <cstdlib>
-#include <deque>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <string>
 #include <unordered_set>
 #include <vector>
+#include <list>
 
 using namespace std;
 
@@ -69,7 +66,7 @@ int game2points(string& game)
 void work(vector<string>& data){
     int sum = 0;
     int cards = 0;
-    deque<int> clones;
+    list<int> clones;
     for (int i = 0; i<data.size(); i++) {
         sum += game2points(data[i]);
         int number = 1;
